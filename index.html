@@ -16,6 +16,9 @@
           <li class="nav-item">
             <a href="#contact" class="navlink">Contact</a>
           </li>
+		  <li class="nav-item">
+            <a href="#project" class="navlink">Basic Project</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -36,9 +39,10 @@
         </div>
       </div>
       <div class="img-box">
-        <img src="meeeee.jpg" alt="Portrait of Juan" />
+        <img src="meeeee.jpg" alt="image" id = "myImage">
       </div>
     </section>
+	
     <section id="about-me" class="goal">
       <h2>Hobby</h2>
       <div class="goal-cont">
@@ -64,6 +68,7 @@
         </p>
       </footer>
     </section>
+	
     <section id="contact" class="cntct">
       <h2>Submit your question here</h2>
       <form id="Inquiry">
@@ -81,6 +86,20 @@
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
+	  <p id ="responseMessage"></p>
     </section>
+	
+	<section id="project" class="prjct">
+      <button class= "btn" onclick="showTime()">Show Time</button>
+	   <p id="time"></p>
+	   
+	   <button class = "btn" onclick="randomNumber()">Random Number</button>
+        <p id="number"></p>
+	   
+    </section>
+	
+	
+	<script src="script.js"></script>
+	<button onclick="goTop()" id="goTopBtn">⬆</button>
   </body>
 </html>
